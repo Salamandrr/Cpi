@@ -11,7 +11,11 @@ do
 		#Si a autre chose que l'option v
 		?)echo "usage: option inconnue"
 		exit 1;;
+<<<<<<< HEAD
 esac
+=======
+	esac
+>>>>>>> fa1d0f85dc99508d46914d8999383ea605536d90
 done
 #Je stocke les nom des fichiers 1 et 2 dans des variable f1 et f2
 f1=$1
@@ -20,7 +24,11 @@ f2=$2
 #Version naive
 naive(){
 	echo "Version naive"
+<<<<<<< HEAD
 	cat $f1 | while read line
+=======
+cat $f1 | while read line
+>>>>>>> fa1d0f85dc99508d46914d8999383ea605536d90
 do
 	if grep -qx $line $f2 
 	then
@@ -31,7 +39,11 @@ do
 			#echo `grep $line $f2`
 		fi
 	fi
+<<<<<<< HEAD
 done 
+=======
+	done 
+>>>>>>> fa1d0f85dc99508d46914d8999383ea605536d90
 if cat /tmp/commun.$$ >/dev/null 2>/dev/null
 then
 	echo "Les lignes en commun sont:"
@@ -102,6 +114,10 @@ then
 	# Si oui on efface le programme
 	rm -f graph_programme
 fi
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> fa1d0f85dc99508d46914d8999383ea605536d90
 #On eface les fichiers temps
 rm -f /tmp/graphique.$$
